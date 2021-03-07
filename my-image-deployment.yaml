@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-image
+spec:
+  selector:
+    matchLabels:
+      app: my-image
+  replicas: 3 
+  template:
+    metadata:
+      labels:
+        app: my-image
+    spec:
+      containers:
+        - name: my-image
+          image: chauwei150/my-image:1.0      
+          ports:
+            - containerPort: 80

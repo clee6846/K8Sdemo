@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-image-canary-v-1-0
+spec:
+  selector:
+    matchLabels:
+      app: my-image-canary
+  replicas: 3 
+  template:
+    metadata:
+      labels:
+        app: my-image-canary
+        track: stable
+    spec:
+      containers:
+        - name: my-image-canary-v-1-0
+          image: chauwei150/my-image:1.0      
+          ports:
+            - containerPort: 80

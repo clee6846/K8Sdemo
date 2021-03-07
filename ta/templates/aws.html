@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AWS</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+
+</head>
+<body>        
+           <h3>AWS Service Descriptions</h3>
+           <form action="{{url_for('show_aws')}}" method="post">
+            <label>AWS Region
+                <select name="AWS_Region">
+                     <option value="us-west-2">us-west-2</option>
+                     <option value="us-east-1">us-east-1</option>
+                </select>
+            </label>
+            <br>
+           <label>Ellie Mae services
+                <select name="Ellie_Mae_Services">
+		     <option value="em-apigw-prod">em-apigw-prod</option>
+                     <option value="em-qa-prod">em-qa-prod</option>
+		     <option value="em-platform-audit-prod">em-platform-audit-prod</option>
+		     <option value="em-epc2-prod">em-epc2-prod</option>
+		     <option value="em-ebsasync-prod">em-ebsasync-prod</option>
+		     <option value="em-cpe-prod">em-cpe-prod</option>
+		     <option value="em-accord-prod">em-accord-prod</option>
+		     <option value="em-eventbus-prod">em-eventbus-prod</option>
+		     <option value="em-top-prod">em-top-prod</option>
+		     <option value="em-consumer-connect-prod">em-consumer-connect-prod</option>
+		     <option value="em-webhooks-prod">em-webhooks-prod</option>
+		     <option value="em-streams-prod">em-streams-prod</option>
+		     <option value="em-eds-prod">em-eds-prod</option>
+		     <option value="em-analytics-prod">em-analytics-prod</option>
+		     <option value="em-krypto-nonprod-dev">em-krypto-nonprod-dev</option>
+		     <option value="em-iamcloud-prod">em-iamcloud-prod</option>
+		     <option value="em-velocify-prod">em-velocify-prod</option>
+		     <option value="em-pds-prod">em-pds-prod</option>
+		     <option value="em-efs-prod">em-efs-prod</option>
+		     <option value="em-mavent-prod">em-mavent-prod</option>
+		     <option value="em-allregs-prod">em-allregs-prod</option>
+		     <option value="em-resource-center-prod">em-resource-center-prod</option>
+		     <option value="em-deploy-prod">em-deploy-prod</option>
+		     <option value="em-marketing-prod">em-marketing-prod</option>
+		     <option value="em-identity-platform-prod">em-identity-platform-prod</option>
+		     <option value="em-entitlements-prod">em-entitlements-prod</option>
+		     <option value="em-performance-prod">em-performance-prod</option>
+		     <option value="em-epc-prod">em-epc-prod</option>
+		     <option value="em-training-prod">em-training-prod</option>
+		     <option value="em-vdi-prod">em-vdi-prod</option>
+		     <option value="em-payment-prod">em-payment-prod</option>
+		     <option value="em-devops-prod">em-devops-prod</option>
+		     <option value="em-sre-prod">em-sre-prod</option>
+		     <option value="em-ebs-prod">em-ebs-prod</option>
+		     <option value="em-workflow-prod">em-workflow-prod</option>
+		     <option value="em-edm-prod">em-edm-prod</option>
+		     <option value="em-datascience-prod">em-datascience-prod</option>
+		     <option value="em-iameng-prod">em-iameng-prod</option>
+		     <option value="em-epps-prod">em-epps-prod</option>
+		     <option value="em-krypto-prod">em-krypto-prod</option>
+		     <option value="em-beacon-prod">em-beacon-prod</option>
+		     <option value="em-dps-prod">em-dps-prod</option>
+		     <option value="em-secops-prod">em-secops-prod</option>
+		     <option value="em-techpubs-prod">em-techpubs-prod</option>
+		     <option value="em-data-prod">em-data-prod</option>
+		     <option value="em-iamprod-prod">em-iamprod-prod</option>
+		     <option value="em-support-prod">em-support-prod</option>
+		     <option value="em-screenflow-prod">em-screenflow-prod</option>
+		     <option value="em-avs-prod">em-avs-prod</option>
+		     <option value="em-notification-prod">em-notification-prod</option>
+		     <option value="em-mobile-prod">em-mobile-prod</option>
+		     <option value="em-mgmt-prod">em-mgmt-prod</option>
+		     <option value="em-kelvin1-prod">em-kelvin1-prod</option>
+		     <option value="em-audit-prod">em-audit-prod</option>
+		     <option value="em-infra-prod">em-infra-prod</option>
+		     <option value="em-devtools-prod">em-devtools-prod</option>
+		     <option value="em-shared-prod">em-shared-prod</option>
+		     <option value="em-ecrm-prod">em-ecrm-prod</option>
+		     <option value="em-master-prod">em-master-prod</option>
+               </select>
+           </label>
+           <br>
+              <label>Descriptions
+                <select name="Descriptions">
+                     <option value="get-account">APIGATEWAY-get-account</option>
+                     <option value="get-api-keys">APIGATEWAY-get-api-keys</option>
+                     <option value="get-client-certificates">APIGATEWAY-get-client-certificates</option>
+                     <option value="get-domain-names">APIGATEWAY-get-domain-names</option>
+                     <option value="get-rest-apis">APIGATEWAY-get-rest-apis</option>
+                     <option value="get-sdk-types">APIGATEWAY-get-sdk-types</option>
+                     <option value="get-usage-plans">APIGATEWAY-get-usage-plans</option>
+                     <option value="get-vpc-links">APIGATEWAY-get-vpc-links</option>
+                     <option value="describe-alarm-history">CLOUDWATCH-describe-alarm-history</option>
+                     <option value="describe-alarms">CLOUDWATCH-describe-alarms</option>
+                     <option value="list-dashboards">CLOUDWATCH-list-dashboards</option>
+                     <option value="list-metrics">CLOUDWATCH-list-metrics</option>
+                     <option value="describe-addresses">EC2-describe-addresses</option>
+                     <option value="describe-availability-zones">EC2-describe-availability-zones</option>
+                     <option value="describe-hosts">EC2-describe-hosts</option>
+                     <option value="describe-instance-status">EC2-describe-instance-status</option>
+                     <option value="describe-instances">EC2-describe-instances</option>
+                     <option value="describe-route-tables">EC2-describe-route-tables</option>
+                     <option value="describe-security-groups">EC2-describe-security-groups</option>
+                     <option value="describe-subnets">EC2-describe-subnets</option>
+                     <option value="describe-volume-status">EC2-describe-volume-status</option>
+                     <option value="describe-volumes">EC2-describe-volumes</option>
+                     <option value="describe-vpcs">EC2-describe-vpcs</option>
+                     <option value="describe-account-limits">ELB-describe-account-limits</option>
+                     <option value="describe-load-balancers">ELB-describe-load-balancers</option>
+                     <option value="describe-load-balancer-policies">ELB-describe-load-balancer-policies</option>
+                     <option value="describe-load-balancer-policy-types">ELB-describe-load-balancer-policy-types</option>
+                     <option value="list-account-aliases">IAM-list-account-aliases</option>
+                     <option value="list-groups">IAM-list-groups</option>
+                     <option value="list-instance-profiles">IAM-list-instance-profiles</option>
+                     <option value="list-open-id-connect-providers">IAM-list-open-id-connect-providers</option>
+                     <option value="list-policies">IAM-list-policies</option>
+                     <option value="list-roles">IAM-list-roles</option>
+                     <option value="list-saml-providers">IAM-list-saml-providers</option>
+                     <option value="list-server-certificates">IAM-server-certificates</option>
+                     <option value="list-users">IAM-list-users</option>
+                     <option value="list-event-source-mappings">LAMBDA-list-event-source-mappings</option>
+                     <option value="list-functions">LAMBDA-list-functions</option>
+                     <option value="list-geo-locations">Route53-list-geo-locations</option>
+                     <option value="list-health-checks">Route53-list-health-checks</option>
+                     <option value="list-hosted-zones">Route53-list-hosted-zones</option>
+                     <option value="list-hosted-zones-by-name">Route53-list-hosted-zones-by-name</option>
+                     <option value="list-query-logging-configs">Route53-list-query-logging-configs</option>
+                     <option value="list-reusable-delegation-sets">Route53-list-reusable-delegation-sets</option>
+                     <option value="list-traffic-policies">Route53-list-traffic-policies</option>
+                     <option value="list-traffic-policy-instances">Route53-list-traffic-policy-instances</option>
+                     <option value="describe-account-attributes">RDS-describe-account-attributes</option>
+                     <option value="describe-certificates">RDS-describe-certificates</option>
+                     <option value="describe-db-cluster-parameter-groups">RDS-describe-db-cluster-parameter-groups</option>
+                     <option value="describe-db-cluster-snapshots">RDS-describe-db-cluster-snapshots</option>
+                     <option value="describe-db-clusters">RDS-describe-db-clusters</option>
+                     <option value="describe-db-engine-versions">RDS-describe-db-engine-versions</option>
+                     <option value="describe-db-instances">RDS-describe-db-instances</option>
+                <option value="describe-db-parameter-groups">RDS-describe-db-parameter-groups</option>
+                <option value="describe-db-security-groups">RDS-describe-db-security-groups</option>
+                <option value="describe-db-snapshots">RDS-describe-db-snapshots</option>
+                <option value="describe-db-subnet-groups">RDS-describe-db-subnet-groups</option>
+                <option value="describe-event-categories">RDS-describe-event-categories</option>
+                <option value="describe-event-subscriptions">RDS-describe-event-subscriptions</option>
+                <option value="describe-events">RDS-describe-events</option>
+                <option value="describe-option-groups">RDS-describe-option-groups</option>
+                <option value="describe-pending-maintenance-actions">RDS-describe-pending-maintenance-actions</option>
+                <option value="describe-reserved-db-instances">RDS-describe-reserved-db-instances</option>
+                <option value="describe-reserved-db-instances-offerings">RDS-describe-reserved-db-instances-offerings</option>
+                <option value="describe-source-regions">RDS-describe-source-regions</option>
+ 
+             </select>
+        </label>        
+        <br>
+        <br>
+        <input type="submit" />
+    </form>
+   </body>
+</html>

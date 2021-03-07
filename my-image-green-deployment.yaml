@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-image-green
+spec:
+  selector:
+    matchLabels:
+      app: my-image-blue-green
+  replicas: 3 
+  template:
+    metadata:
+      labels:
+        app: my-image-blue-green
+        color: green
+    spec:
+      containers:
+        - name: my-image-green
+          image: chauwei150/my-image:1.1      
+          ports:
+            - containerPort: 80

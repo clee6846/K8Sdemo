@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trused Advisor</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+
+</head>
+<body>
+    <h3>Trusted Advisor</h3>
+    <form action="{{url_for('show_ta')}}" method="post">
+        <label>Ellie Mae services
+            <select name="Ellie_Mae_Services">
+		<option value="em-apigw-prod">em-apigw-prod</option>
+                <option value="em-qa-prod">em-qa-prod</option>
+		<option value="em-platform-audit-prod">em-platform-audit-prod</option>
+		<option value="em-epc2-prod">em-epc2-prod</option>
+		<option value="em-ebsasync-prod">em-ebsasync-prod</option>
+		<option value="em-cpe-prod">em-cpe-prod</option>
+		<option value="em-accord-prod">em-accord-prod</option>
+		<option value="em-eventbus-prod">em-eventbus-prod</option>
+		<option value="em-top-prod">em-top-prod</option>
+		<option value="em-consumer-connect-prod">em-consumer-connect-prod</option>
+		<option value="em-webhooks-prod">em-webhooks-prod</option>
+		<option value="em-streams-prod">em-streams-prod</option>
+		<option value="em-eds-prod">em-eds-prod</option>
+		<option value="em-analytics-prod">em-analytics-prod</option>
+		<option value="em-krypto-nonprod-dev">em-krypto-nonprod-dev</option>
+		<option value="em-iamcloud-prod">em-iamcloud-prod</option>
+		<option value="em-velocify-prod">em-velocify-prod</option>
+		<option value="em-pds-prod">em-pds-prod</option>
+		<option value="em-efs-prod">em-efs-prod</option>
+		<option value="em-mavent-prod">em-mavent-prod</option>
+		<option value="em-allregs-prod">em-allregs-prod</option>
+		<option value="em-resource-center-prod">em-resource-center-prod</option>
+		<option value="em-deploy-prod">em-deploy-prod</option>
+		<option value="em-marketing-prod">em-marketing-prod</option>
+		<option value="em-identity-platform-prod">em-identity-platform-prod</option>
+		<option value="em-entitlements-prod">em-entitlements-prod</option>
+		<option value="em-performance-prod">em-performance-prod</option>
+		<option value="em-epc-prod">em-epc-prod</option>
+		<option value="em-training-prod">em-training-prod</option>
+		<option value="em-vdi-prod">em-vdi-prod</option>
+		<option value="em-payment-prod">em-payment-prod</option>
+		<option value="em-devops-prod">em-devops-prod</option>
+		<option value="em-sre-prod">em-sre-prod</option>
+		<option value="em-ebs-prod">em-ebs-prod</option>
+		<option value="em-workflow-prod">em-workflow-prod</option>
+		<option value="em-edm-prod">em-edm-prod</option>
+		<option value="em-datascience-prod">em-datascience-prod</option>
+		<option value="em-iameng-prod">em-iameng-prod</option>
+		<option value="em-epps-prod">em-epps-prod</option>
+		<option value="em-krypto-prod">em-krypto-prod</option>
+		<option value="em-beacon-prod">em-beacon-prod</option>
+		<option value="em-dps-prod">em-dps-prod</option>
+		<option value="em-secops-prod">em-secops-prod</option>
+		<option value="em-techpubs-prod">em-techpubs-prod</option>
+		<option value="em-data-prod">em-data-prod</option>
+		<option value="em-iamprod-prod">em-iamprod-prod</option>
+		<option value="em-support-prod">em-support-prod</option>
+		<option value="em-screenflow-prod">em-screenflow-prod</option>
+		<option value="em-avs-prod">em-avs-prod</option>
+		<option value="em-notification-prod">em-notification-prod</option>
+		<option value="em-mobile-prod">em-mobile-prod</option>
+		<option value="em-mgmt-prod">em-mgmt-prod</option>
+		<option value="em-kelvin1-prod">em-kelvin1-prod</option>
+		<option value="em-audit-prod">em-audit-prod</option>
+		<option value="em-infra-prod">em-infra-prod</option>
+		<option value="em-devtools-prod">em-devtools-prod</option>
+		<option value="em-shared-prod">em-shared-prod</option>
+		<option value="em-ecrm-prod">em-ecrm-prod</option>
+		<option value="em-master-prod">em-master-prod</option>
+            </select>
+        </label>
+        <br>
+        <label>Trusted Advisor
+            <select name="Trusted_Advisor">
+                <option value="1e93e4c0b5">Cost Optimization - Amazon EC2 Reserved Instance Lease Expiration</option>
+                <option value="1MoPEMsKx6">Cost Optimization - Amazon EC2 Reserved Instances Optimization</option>
+                <option value="Ti39halfu8">Cost Optimization - Amazon RDS Idle DB Instances</option>
+                <option value="51fC20e7I2">Cost Optimization - Amazon Route 53 Latency Resource Record Sets</option>
+                <option value="hjLMh88uM8">Cost Optimization - Idle Load Balancers</option>
+                <option value="Qch7DwouX1">Cost Optimization - Low Utilization Amazon EC2 Instances</option>
+                <option value="Z4AUBRNSmz">Cost Optimization - Unassociated Elastic IP Addresses</option>
+                <option value="DAvU99Dc4C">Cost Optimization - Underutilized Amazon EBS Volumes</option>
+                <option value="G31sQ1E9U">Cost Optimization - Underutilized Amazon Redshift Clusters</option>
+                <option value="xuy7H1avtl">Fault Tolerance - Amazon Aurora DB Instance Accessibility </option>
+                <option value="H7IgTzjTYb">Fault Tolerance - Amazon EBS Snapshots </option>
+                <option value="wuy7G1zxql">Fault Tolerance - Amazon EC2 Availability Zone Balance </option>
+                <option value="opQPADkZvH">Fault Tolerance - Amazon RDS Backups </option>
+                <option value="f2iK5R6Dep">Fault Tolerance - Amazon RDS Multi-AZ </option>
+                <option value="Cb877eB72b ">Fault Tolerance - Amazon Route 53 Deleted Health Checks </option>
+                <option value="b73EEdD790">Fault Tolerance - Amazon Route 53 Failover Resource Record Sets </option>
+                <option value="C056F80cR3">Fault Tolerance - Amazon Route 53 High TTL Resource Record Sets </option>
+                <option value="cF171Db240">Fault Tolerance - Amazon Route 53 Name Server Delegations </option>
+                <option value="BueAdJ7NrP">Fault Tolerance - Amazon S3 Bucket Logging </option>
+                <option value="R365s2Qddf">Fault Tolerance - Amazon S3 Bucket Versioning </option>
+                <option value="CLOG40CDO8">Fault Tolerance - Auto Scaling Group Health Check </option>
+                <option value="8CNsSllI5v">Fault Tolerance - Auto Scaling Group Resources </option>
+                <option value="0t121N1Ty3">Fault Tolerance - AWS Direct Connect Connection Redundancy </option>
+                <option value="8M012Ph3U5">Fault Tolerance - AWS Direct Connect Location Redundancy </option>
+                <option value="4g3Nt5M1Th">Fault Tolerance - AWS Direct Connect Virtual Interface Redundancy </option>
+                <option value="V77iOLlBqz">Fault Tolerance - EC2 Config Service for EC2 Windows Instances </option>
+                <option value="7qGXsKIUw">Fault Tolerance - ELB Connection Draining </option>
+                <option value="xdeXZKIUy">Fault Tolerance - ELB Cross-Zone Load Balancing </option>
+                <option value="tfg86AVHAZ">Fault Tolerance - Large Number of Rules in an EC2 Security Group </option>
+                <option value="iqdCTZKCUp">Fault Tolerance - Load Balancer Optimization </option>
+                <option value="Wnwm9Il5bG">Fault Tolerance - PV Driver Version for EC2 Windows Instances </option>
+                <option value="S45wrEXrLz">Fault Tolerance - VPN Tunnel Redundancy </option>
+                <option value="PPkZrjsH2q">Performance - Amazon EBS Provisioned IOPS Volume Attachment Configuration</option>
+                <option value="Bh2xRR2FGH">Performance - Amazon EC2 to EBS Throughput Optimization</option>
+                <option value="B913Ef6fb4">Performance - Amazon Route 53 Alias Resource Record Sets </option>
+                <option value="N420c450f2">Performance - CloudFront Alternate Domain Names </option>
+                <option value="796d6f3D83">Performance - CloudFront Content Delivery Optimization </option>
+                <option value="N415c450f2">Performance - CloudFront Header Forwarding and Cache Hit Ratio </option>
+                <option value="ZRxQlPsb6c">Performance - High Utilization Amazon EC2 Instances</option>
+                <option value="j3DFqYTe29">Performance - Large Number of EC2 Security Group Rules Applied to an Instance</option>
+                <option value="k3J2hns32g">Performance - Overutilized Standard Amazon EBS Volumes</option>
+                <option value="fW7HH0l7J9">Service Limit - Auto Scaling - Groups </option>
+                <option value="aW7HH0l7J9">Service Limit - Auto Scaling - Launch Configurations </option>
+                <option value="gW7HH0l7J9">Service Limit - CloudFormation - Stacks </option>
+                <option value="eI7KK0l7J9">Service Limit - EBS - Active Snapshots </option>
+                <option value="fH7LL0l7J9 ">Service Limit - EBS - Active Volumes </option>
+                <option value="dH7RR0l6J9">Service Limit - EBS - General Purpose SSD Volume Storage </option>
+                <option value="cG7HH0l7J9">Service Limit - EBS - Magnetic (standard) Volume Storage </option>
+                <option value="tV7YY0l7J9">Service Limit - EBS - Provisioned IOPS (SSD) Volume Aggregate IOPS </option>
+                <option value="gI7MM0l7J9">Service Limit - EBS - Provisioned IOPS SSD (io1) Volume Storage </option>
+                <option value="aW9HH0l8J6">Service Limit - EC2 - Elastic IP Addresses </option>
+                <option value="0Xc6LMYG8P">Service Limit - EC2 - On-Demand Instances </option>
+                <option value="iH7PP0l7J9">Service Limit - EC2 - Reserved Instance Leases </option>
+                <option value="iK7OO0l7J9">Service Limit - ELB - Active Load Balancers </option>
+                <option value="sU7XX0l7J9">Service Limit - IAM - Group </option>
+                <option value="nO7SS0l7J9">Service Limit - IAM - Instance Profiles </option>
+                <option value="rT7WW0l7J9">Service Limit - IAM - Server Certificates </option>
+                <option value="qS7VV0l7J9">Service Limit - IAM - Users </option>
+                <option value="bW7HH0l7J9">Service Limit - Kinesis - Shards per Region </option>
+                <option value="jtlIMO3qZM">Service Limit - RDS - Cluster Parameter Groups </option>
+                <option value="7fuccf1Mx7">Service Limit - RDS - Cluster roles </option>
+                <option value="gjqMBn6pjz">Service Limit - RDS - Clusters </option>
+                <option value="XG0aXHpIEt">Service Limit - RDS - DB Instances </option>
+                <option value="jEECYg2YVU">Service Limit - RDS - DB Parameter Groups </option>
+                <option value="gfZAn3W7wl">Service Limit - RDS - DB Security Groups </option>
+                <option value="dV84wpqRUs">Service Limit - RDS - DB snapshots per user </option>
+                <option value="keAhfbH5yb">Service Limit - RDS - Event Subscriptions </option>
+                <option value="dBkuNCvqn5">Service Limit - RDS - Max Auths per Security Group </option>
+                <option value="3Njm0DJQO9">Service Limit - RDS - Option Groups </option>
+                <option value="pYW8UkYz2w">Service Limit - RDS - Read Replicas per Master </option>
+                <option value="UUDvOa5r34">Service Limit - RDS - Reserved Instances </option>
+                <option value="dYWBaXaaMM">Service Limit - RDS - Subnet Groups </option>
+                <option value="jEhCtdJKOY">Service Limit - RDS - Subnets per Subnet Group </option>
+                <option value="P1jhKWEmLa">Service Limit - RDS - Total Storage Quota </option>
+                <option value="hJ7NN0l7J9">Service Limit - SES - Daily Sending Quota </option>
+                <option value="lN7RR0l7J9">Service Limit - VPC - Elastic IP Address </option>
+                <option value="kM7QQ0l7J9">Service Limit - VPC - Internet Gateways </option>
+                <option value="jL7PP0l7J9">Service Limit - VPC - Network Interfaces </option>
+                <option value="ePs02jT06w">Security - Amazon EBS Public Snapshots</option>
+                <option value="rSs93HQwa1">Security - Amazon RDS Security Group Access Risk</option>
+                <option value="nNauJisYIT">Security - Amazon RDS Security Group Access Risk</option>
+                <option value="c9D319e7sG">Security - Amazon Route 53 MX and SPF Resource Record Sets</option>
+                <option value="Pfx0RwqBli">Security - Amazon S3 Bucket Permissions</option>
+                <option value="vjafUGJ9H0">Security - AWS CloudTrail Logging</option>
+                <option value="N425c450f2">Security - CloudFront Custom SSL Certificates in the IAM Certificate Store</option>
+                <option value="N430c450f2">Security - CloudFront SSL Certificate on the Origin Server</option>
+                <option value="a2sEc6ILx">Security - ELB Listener Security</option>
+                <option value="xSqX82fQu">Security - ELB Security Groups</option>
+                <option value="DqdJqYeRm5">Security - IAM Access Key Rotation</option>
+                <option value="Yw2K9puPzl">Security - IAM Password Policy</option>
+                <option value="zXCkfM1nI3">Security - IAM Use Security</option>
+                <option value="7DAFEmoDos">Security - MFA on Root Account</option>
+                <option value="HCP4007jGY">Security - Security Groups - Specific Ports Unrestricted</option>
+                <option value="1iG5NDGVre">Security - Security Groups - Unrestricted Access</option>
+
+                
+             </select>
+        </label>        
+        <br>
+        <input type="submit" />
+    </form>
+   </body>
+</html>

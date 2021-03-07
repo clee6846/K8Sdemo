@@ -1,0 +1,89 @@
+Forwarding from 0.0.0.0:3000 -> 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+E0220 21:59:21.700337    8843 portforward.go:385] error copying from local connection to remote stream: read tcp4 172.31.18.10:3000->67.169.104.116:62007: read: connection timed out
+E0220 21:59:21.700343    8843 portforward.go:385] error copying from local connection to remote stream: read tcp4 172.31.18.10:3000->67.169.104.116:62009: read: connection timed out
+E0220 21:59:21.700368    8843 portforward.go:385] error copying from local connection to remote stream: read tcp4 172.31.18.10:3000->67.169.104.116:62010: read: connection timed out
+E0220 21:59:21.700383    8843 portforward.go:385] error copying from local connection to remote stream: read tcp4 172.31.18.10:3000->67.169.104.116:62008: read: connection timed out
+E0220 21:59:21.704215    8843 portforward.go:385] error copying from local connection to remote stream: read tcp4 172.31.18.10:3000->67.169.104.116:62004: read: connection timed out
+E0220 21:59:21.704245    8843 portforward.go:385] error copying from local connection to remote stream: read tcp4 172.31.18.10:3000->67.169.104.116:62006: read: connection timed out
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+E0221 09:43:49.753180    8843 portforward.go:233] lost connection to pod
+Forwarding from 127.0.0.1:9090 -> 9090
+Forwarding from [::1]:9090 -> 9090
+error: TYPE/NAME and list of ports are required for port-forward
+See 'kubectl port-forward -h' for help and examples
+Forwarding from 0.0.0.0:3000 -> 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+Handling connection for 3000
+E0221 23:22:41.983222   26281 portforward.go:385] error copying from local connection to remote stream: read tcp4 172.31.18.10:3000->162.142.125.37:47432: read: connection reset by peer
+Handling connection for 3000
+Handling connection for 3000
+E0221 23:22:42.212676   26281 portforward.go:385] error copying from local connection to remote stream: read tcp4 172.31.18.10:3000->162.142.125.37:49804: read: connection reset by peer
+E0221 23:22:43.195597   26281 portforward.go:385] error copying from local connection to remote stream: read tcp4 172.31.18.10:3000->162.142.125.37:52868: read: connection reset by peer
+Handling connection for 3000
+Handling connection for 3000

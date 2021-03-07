@@ -1,0 +1,72 @@
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "1"
+  creationTimestamp: "2021-02-21T01:46:06Z"
+  generation: 1
+  labels:
+    app: my-image-rolling-update
+  name: my-image-rolling-update
+  namespace: default
+  resourceVersion: "74436"
+  selfLink: /apis/apps/v1/namespaces/default/deployments/my-image-rolling-update
+  uid: 7cee134a-5017-46f9-ba2b-82b26b828d04
+spec:
+  progressDeadlineSeconds: 600
+  minReadySeconds: 20
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: my-image-rolling-update
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: my-image-rolling-update
+    spec:
+      containers:
+      - image: chauwei150/my-image:1.0
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
+          protocol: TCP
+        name: my-image
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+status:
+  availableReplicas: 1
+  conditions:
+  - lastTransitionTime: "2021-02-21T01:46:07Z"
+    lastUpdateTime: "2021-02-21T01:46:07Z"
+    message: Deployment has minimum availability.
+    reason: MinimumReplicasAvailable
+    status: "True"
+    type: Available
+  - lastTransitionTime: "2021-02-21T01:46:06Z"
+    lastUpdateTime: "2021-02-21T01:46:07Z"
+    message: ReplicaSet "my-image-rolling-update-7fc574ddbf" has successfully progressed.
+    reason: NewReplicaSetAvailable
+    status: "True"
+    type: Progressing
+  observedGeneration: 1
+  readyReplicas: 1
+  replicas: 1
+  updatedReplicas: 1
+
