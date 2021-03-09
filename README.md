@@ -1,6 +1,7 @@
 # From Charles Lee, 
 
-1. The repo has two prts the first is the Python codes
+The repo has two parts
+ the first is the Python codes
 
 a. deploymentautomations.py
 b. rdsutilities.py
